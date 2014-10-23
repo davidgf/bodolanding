@@ -57,6 +57,10 @@
 	background-color: transparent;
 }
 
+.img-circle {
+	display: block;
+	margin: auto;
+}
 @media only screen and (max-width: 766px) {
 	/* Collapsed navbar */
 	.navbar, .collapsing, .in {background-color: #000;}
