@@ -42,7 +42,7 @@
             </div>
             <div class="navbar-collapse collapse navbar-right">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#features">Características</a></li>
+                <li><a href="#features">Características</a></li>
                 <li><a href="#price">Precio</a></li>
                 <li><a href="#contact">Contacto</a></li>
               </ul>
@@ -56,55 +56,19 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item first">
-          <!-- <img src="images/wed2.jpg" class="img-responsive" alt="First slide"> -->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item active second">
-          <!-- <img src="images/wed.jpg" alt="Second slide"> -->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item third">
-          <!-- <img src="images/wed2.jpg" alt="Third slide"> -->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
+    
 
+    <header id="top" class="header">
+    </header>
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div id="features" class="container marketing">
+    <div class="container marketing">
 
+    <section id="features">
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-3">
@@ -186,9 +150,11 @@
 
       <hr class="featurette-divider">
 
+      </section>
       <!-- /END THE FEATURETTES -->
 
-      <div class="row pricing-table" id="price">
+      <section id="price">
+      <div class="row pricing-table">
         <div class="col-md-6">
         <div class="panel panel-default">
            <div class="panel-heading"><h3 class="text-center">MINI PACK</h3></div>
@@ -198,9 +164,9 @@
               <h1><strong>199€</strong></h1>
           </div>
                   <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> Fotos ilimitadas</li>
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> Alojamiento hasta 6 meses después de la boda</li>
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> Soporte Técnico</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Fotos ilimitadas</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Alojamiento hasta 6 meses después de la boda</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Soporte Técnico y actualizaciones</li>
                   </ul>
           <div class="panel-footer">
           <a class="btn btn-lg btn-block btn-danger" href="https://creativemarket.com/artlabs/12114-Bootstrap-3.0.-pricing-tables-flat">COMPRAR</a>
@@ -217,9 +183,9 @@
               <h1><strong>399€</strong></h1>
           </div>
                              <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> MINI PACK</li>
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> Dominio personalizado</li>
-                    <li class="list-group-item"><i class="icon-ok text-danger"></i> Diseño personalizado</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>MINI PACK</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Dominio y diseño personalizados</li>
+                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Invitaciones virtuales</li>
                   </ul>
           <div class="panel-footer">
           <a class="btn btn-lg btn-block btn-danger" href="https://creativemarket.com/artlabs/12114-Bootstrap-3.0.-pricing-tables-flat">COMPRAR</a>
@@ -228,6 +194,7 @@
 
         </div>
       </div>
+      </section>
 
 
       <!-- FOOTER -->
@@ -245,5 +212,24 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+
+      // Scrolls to the selected menu item on the page
+      $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top -10
+                      }, 1000);
+                      // return false;
+                  }
+              }
+          });
+      });
+    </script>
 </body>
 </html>
