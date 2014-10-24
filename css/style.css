@@ -109,11 +109,30 @@ section {
 #features .icons:hover {
 	color: #ccc;
 }
+
+.featurette img {
+	max-height: 400px;
+}
+
 .img-circle {
 	display: block;
 	margin: auto;
 }
 
+.callout {
+	display: table;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: url(../images/wed.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	padding-bottom: 30px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
