@@ -94,6 +94,10 @@ section {
 
 /* FEATURES
 ------------------------------------------- */
+#features .description {
+	padding-bottom: 30px;
+}
+
 #features .icons {
 	font-size: 5em;
 	letter-spacing: -4px;
