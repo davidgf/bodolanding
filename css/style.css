@@ -30,6 +30,28 @@ section {
 	bottom: 15px;
 }
 
+.carousel-inner > .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.carousel-inner > .item.first {
+  background-image: url('../images/wed2.jpg');
+}
+
+.carousel-inner > .item.second {
+  background-image: url('../images/wed.jpg');
+}
+
+.carousel-inner > .item.third {
+  background-image: url('../images/wed2.jpg');
+}
+
 /* NAVBAR
 ------------------------------------------- */
 
@@ -62,28 +84,6 @@ section {
 	background-color: transparent;
 }
 
-.carousel-inner > .item {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.carousel-inner > .item.first {
-  background-image: url('../images/wed2.jpg');
-}
-
-.carousel-inner > .item.second {
-  background-image: url('../images/wed.jpg');
-}
-
-.carousel-inner > .item.third {
-  background-image: url('../images/wed2.jpg');
-}
-
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -92,10 +92,27 @@ section {
 	background-color: transparent;
 }
 
+/* FEATURES
+------------------------------------------- */
+#features .icons {
+	font-size: 5em;
+	letter-spacing: -4px;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+#features .icons:hover {
+	color: #ccc;
+}
 .img-circle {
 	display: block;
 	margin: auto;
 }
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 @media only screen and (max-width: 766px) {
 	/* Collapsed navbar */
 	.navbar, .collapsing, .in {background-color: #000;}
